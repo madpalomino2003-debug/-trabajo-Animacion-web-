@@ -1,0 +1,251 @@
+/* =========================================
+   CONFIGURACIÓN GENERAL
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f4f8ff;
+    color: #172554;
+}
+
+
+/* =========================================
+   ENCABEZADO
+   ========================================= */
+
+.hero {
+    min-height: 430px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 50px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #dbeafe,
+        #eff6ff,
+        #ffffff
+    );
+
+    overflow: hidden;
+}
+
+
+/* Título principal */
+
+#titulo {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+
+/* Subtítulo */
+
+#subtitulo {
+    font-size: 18px;
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   BOTÓN
+   ========================================= */
+
+#btnAnimar {
+    border: none;
+
+    background: #2563eb;
+    color: white;
+
+    padding: 14px 28px;
+
+    border-radius: 30px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+
+    transition: 0.3s;
+}
+
+#btnAnimar:hover {
+    transform: translateY(-3px);
+    background: #1d4ed8;
+}
+
+
+/* =========================================
+   ZONA INTERACTIVA
+   ========================================= */
+
+.zona-interactiva {
+    min-height: 300px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+    background: white;
+
+    overflow: hidden;
+}
+
+
+/* Caja que se moverá */
+
+#caja {
+    width: 90px;
+    height: 90px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================
+   TARJETAS
+   ========================================= */
+
+.tarjetas {
+    padding: 70px 8%;
+
+    text-align: center;
+
+    background: #eef5ff;
+}
+
+.tarjetas h2 {
+    font-size: 30px;
+
+    margin-bottom: 40px;
+}
+
+
+.contenedor-tarjetas {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    max-width: 1000px;
+
+    margin: auto;
+}
+
+
+/* Cada tarjeta */
+
+.card {
+    background: white;
+
+    padding: 30px 25px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+
+/* Iconos */
+
+.icono {
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+
+/* Título de tarjeta */
+
+.card h3 {
+    font-size: 21px;
+
+    margin-bottom: 10px;
+}
+
+
+/* Texto */
+
+.card p {
+    color: #64748b;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   PIE DE PÁGINA
+   ========================================= */
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    background: #172554;
+
+    color: white;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 750px) {
+
+    #titulo {
+        font-size: 35px;
+    }
+
+    #subtitulo {
+        font-size: 15px;
+    }
+
+    .contenedor-tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+}

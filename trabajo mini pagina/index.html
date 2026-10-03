@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explora • Crea • Anima</title>
+
+    <!-- Fuente de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Archivo CSS -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         ENCABEZADO PRINCIPAL
+         ========================================= -->
+
+    <header class="hero">
+
+        <!-- Título que será animado con gsap.from() -->
+        <h1 id="titulo">
+            Explora, Crea y Anima
+        </h1>
+
+        <!-- Subtítulo que también será animado -->
+        <p id="subtitulo">
+            Descubre una mini experiencia interactiva creada con GSAP
+        </p>
+
+        <!-- Botón principal -->
+        <button id="btnAnimar">
+            ✨ Mover la caja
+        </button>
+
+    </header>
+
+
+    <!-- =========================================
+         CAJA INTERACTIVA
+         ========================================= -->
+
+    <section class="zona-interactiva">
+
+        <div id="caja">
+            🚀
+        </div>
+
+        <p>
+            Haz clic en el botón para mover la caja
+        </p>
+
+    </section>
+
+
+    <!-- =========================================
+         TARJETAS
+         ========================================= -->
+
+    <section class="tarjetas">
+
+        <h2>Explora nuevas experiencias</h2>
+
+        <div class="contenedor-tarjetas">
+
+            <!-- Tarjeta 1 -->
+            <article class="card">
+
+                <div class="icono">
+                    🌎
+                </div>
+
+                <h3>Naturaleza</h3>
+
+                <p>
+                    Descubre lugares increíbles y paisajes llenos de vida.
+                </p>
+
+            </article>
+
+
+            <!-- Tarjeta 2 -->
+            <article class="card">
+
+                <div class="icono">
+                    🏙️
+                </div>
+
+                <h3>Ciudades</h3>
+
+                <p>
+                    Conoce nuevas culturas, lugares y experiencias.
+                </p>
+
+            </article>
+
+
+            <!-- Tarjeta 3 -->
+            <article class="card">
+
+                <div class="icono">
+                    🏝️
+                </div>
+
+                <h3>Aventuras</h3>
+
+                <p>
+                    Vive momentos inolvidables y nuevas aventuras.
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         PIE DE PÁGINA
+         ========================================= -->
+
+    <footer>
+
+        <p>
+            Mini-página animada • HTML + CSS + JavaScript + GSAP
+        </p>
+
+    </footer>
+
+
+    <!-- =========================================
+         LIBRERÍA GSAP
+         ========================================= -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <!-- Nuestro JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
